@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Indie+Flower|Pacifico" rel="stylesheet">
+
+<div id="form-outer">
+<h1 id="title">NICOLASCRIBBLES</h1>
+<div id="form-inner">
+<p id="description">How May I Assist You?</p>
+<form id="survey-form">
+  <div class="rowForm">
+    <div class="labels">
+      <label id="name-label" for="name">Name* :</label>
+    </div>
+    <div class="rightForm">
+      <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Required" required>
+    </div>
+      <div class="rowForm">
+    <div class="labels">
+      <label id="number-label" for="age">Age* :</label>
+    </div>
+    <div class="rightForm">
+      <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Required" required>
+    </div>  
+        
+ <div class="rowForm">
+    <div class="labels">
+      <label id="email-label" for="email">Email* :</label>
+    </div>
+    <div class="rightForm">
+      <input type="email" name="email" id="email" class="input-field" placeholder="Required" required>
+    </div>
+        
+        <div class="rowForm">
+    <div class="labels">
+      <label for="services">What kind of services are you looking for?</label>
+    </div>
+    <div class="rightForm">
+      <select id="dropdown" name="services" class="dropdown">
+        <option disabled value>Select an option</option>
+        <option value="Graphic-design">Graphic Design</option>
+        <option value="Web-Programming">Web Programming</option>
+        <option value="Web-Maintenance">Web Maintenance</option>
+        <option value="App-Dev">Application Development</option>
+        <option value="IT">IT Services</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+          
+          
+        
+<div class="rowForm">
+    <div class="labels">
+      <label for="user-rating">Would you recommend freeCodeCamp to your buds?</label>
+    </div>
+    <div class="rightForm">
+    <ul style="list-style:none;">
+      <li class="radio"><input name="radio-buttons" value=1 type="radio" class="user-rating"><label>"Abso-tute-ly"</label></li>
+      <li class="radio"><input name="radio-buttons" value=2 type="radio" class="user-rating">Maybe I will, Maybe I won't</li>
+      <li class="radio"><input name="radio-buttons" value=3 type="radio" class="user-rating">Forget about it</li>
+      </ul>
+  </div>
+  <div class="rowForm">
+    <div class="labels">
+      <label for="user-rating">Check All That Apply</label>
+    </div>
+    <div class="rightForm">
+        <ul id="preferences" style="list-style:none;">
+      <li class="checkbox"><input name="prefer" value=1 type="checkbox" class="user-rating"><label>You're a car salesman and you want to slap roofs</label></li>
+      <li class="checkbox"><input name="prefer" value=2 type="checkbox" class="user-rating">You put your hands in the air because you don't care</li>
+      <li class="checkbox"><input name="prefer" value=3 type="checkbox" class="user-rating">You have an alibi</li>
+                <li class="checkbox"><input name="prefer" value=4 type="checkbox" class="user-rating">You adore cute floofs</li>
+                <li class="checkbox"><input name="prefer" value=5 type="checkbox" class="user-rating">You crave <s>attention</s> ice cream</li>
+                <li class="checkbox"><input name="prefer" value=3 type="checkbox" class="user-rating">You let the dogs out</li>
+      </ul>
+  </div>
+     <div class="rowForm">
+    <div class="labels"><center>
+      <label for="user-rating">What is the meaning of life</label>
+    </div>
+    <div class="rightForm"><center>
+        <textarea id="comments" class="input-field" style="height:100px;resize;vertical;" name="comment" placeholder="If you answer anything other than 42, you are wrong"></textarea>
+          </div>
+       <center><button id="submit" type="submit">Submit</button> </center>
+       </div>
+       </div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>

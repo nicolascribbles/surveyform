@@ -1,0 +1,43 @@
+div{
+  position:static;
+  display:static;
+}
+.rowForm{
+  display:static;
+  text-align:left;
+  flex-basis:100px;
+}
+.rightForm{
+  display:grid;
+  flex-basis:50px auto;
+}
+html, body {
+  min-width: 320px;
+}
+#form-outer {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
+#form-inner {
+  display: inline-grid;
+  font-family: 'Bitter', serif;
+    background: linear-gradient(to right, rgba(255, 0 , 0, 0.5),rgba(255, 127, 0, 0.5),rgba(255, 225, 0, 0.5),rgba(0, 225, 0, 0.5),rgba(0, 0, 225, 0.5),rgba(75, 0, 130, 0.5),rgba(148, 0, 211, 0.5)); 
+  text-align:center;
+ 
+}
+.form-inner {
+  grid-column-gap:50px;
+ grid-row-gap:50px;
+}
+textarea{
+  text-align:center;
+  font-family: 'bitter', serif;
+  background-color:lightgray;
+  width:300px;
+}
+button{
+  background-color: #99cc00;
+  color:#080808;
+  border-color: #ffffff;
+ font-family: 'Pacifico', cursive;
+}
